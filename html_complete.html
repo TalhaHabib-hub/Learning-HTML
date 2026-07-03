@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!-- 
+    DOCTYPE tells the browser this is an HTML5 document
+    Always write this at the very top of every HTML file
+-->
+
+<!--
+=============================================================================
+                  COMPLETE HTML GUIDE - BEGINNER TO ADVANCED
+                             Written by: Talha
+=============================================================================
+-->
+
+<!-- <html> is the root element - everything goes inside it -->
+<!-- lang="en" tells the browser the language is English -->
+<html lang="en">
+
+
+<!-- =========================================================================
+     SECTION 1: THE HEAD
+     The <head> contains information ABOUT the page (not visible on screen)
+     ========================================================================= -->
+<head>
+
+
+    <!-- charset tells browser to support all characters including Urdu, Arabic etc -->
+    <meta charset="UTF-8">
+
+    <!-- viewport makes the website work properly on mobile phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- description shows up in Google search results -->
+    <meta name="description" content="Complete HTML Guide for Talha">
+
+    <!-- author of the page -->
+    <meta name="author" content="Talha">
+
+    <!-- keywords for search engines -->
+    <meta name="keywords" content="HTML, guide, tutorial, Talha">
+
+    <!-- title shows in the browser tab -->
+    <title>Complete HTML Guide - Talha</title>
+
+    <!-- link to an external CSS file (if you have one) -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- link to a favicon (small icon in browser tab) -->
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+</head>
+
+
+<!-- =========================================================================
+     SECTION 2: THE BODY
+     The <body> contains everything VISIBLE on the page
+     ========================================================================= -->
+<body>
+     <p id="top">you came to the top</p>
+ <nav>
+    <a href="#bottom">go to bottom</a>
+ </nav>
+
+
+
+<!-- =========================================================================
+     SECTION 3: HEADINGS
+     H1 is the biggest, H6 is the smallest
+     Use only ONE <h1> per page (main title)
+     ========================================================================= -->
+
+    <h1 id="Home">This is Heading 1 - Main Title</h1>
+    <h2>This is Heading 2 - Section Title</h2>
+    <h3>This is Heading 3 - Sub Section</h3>
+    <h4>This is Heading 4</h4>
+    <h5>This is Heading 5</h5>
+    <h6>This is Heading 6 - Smallest</h6>
+
+
+<!-- =========================================================================
+     SECTION 4: PARAGRAPHS & TEXT FORMATTING
+     ========================================================================= -->
+
+    <!-- <p> is a paragraph - adds space above and below -->
+    <p>This is a normal paragraph. HTML stands for HyperText Markup Language . ipsum dolor, sit amet consectetur adipisicing elit. Porro  quo, assumenda <br> errorbr>quae architecto suscipit ipsa ipsum quis ipsam, odit <hr> nemo explicabo eius libero, dicta doloribus velit voluptatibus quaerat aliquam veniam eaque!</p>
+
+    <!-- Text formatting tags -->
+    <p>
+        <b>Bold text using b tag</b> <br>
+        <strong>Strong text (bold + important for SEO)</strong> <br>
+        <i>Italic text using i tag</i> <br>
+        <em>Emphasized text (italic + important for SEO)</em> <br>
+        <u>Underlined text</u> <br>
+        <s>Strikethrough text</s> <br>
+        <mark>Highlighted / Marked text</mark> <br>
+        <small>Small text</small> <br>
+        <big>Big text</big> <br>
+        Normal text with <sup>superscript</sup> like X<sup>2</sup> <br>
+        Normal text with <sub>subscript</sub> like H<sub>2</sub>O <br>
+        <code>Code text - looks like monospace font</code> <br>
+        <pre>Pre-formatted text
+        keeps spaces
+        and line breaks exactly</pre>
+        <blockquote>This is a blockquote - used for long quotes from someone</blockquote>
+        <q>This is a short inline quote</q> <br>
+        <abbr title="HyperText Markup Language">HTML</abbr> - hover over this to see full form <br>
+        <cite>Citation text - for book/movie titles</cite>
+    </p>
+
+    <!-- <br> is a line break (no closing tag needed) -->
+    <p>First line <br> Second line after break</p>
+
+    <!-- <hr> is a horizontal line (divider) -->
+    <hr>
+
+
+<!-- =========================================================================
+     SECTION 5: LINKS (ANCHOR TAG)
+     ========================================================================= -->
+
+    <!-- Basic link -->
+    <a href="https://www.youtube.com/watch?v=rklidcZ-aLU&list=PL78RhpUUKSwfYr_bKHq7SWfTCBGad_xxP&t=3s" target="_blank">YouTube</a><br>
+
+    <!-- Open link in new tab using target="_blank" -->
+    <a href="https://www.google.com" target="_blank">Open Google in new tab</a><br>
+
+    <!-- Link to another page in same folder -->
+    <a href="about.html">About Page</a><br>
+
+    <!-- Link to a section on same page using id -->
+    <a href="#contact">Jump to Contact Section</a><br>
+
+    <!-- Email link - opens email app -->
+    <a href="mailto:talha@gmail.com">Send me an email</a><br>
+
+    <!-- Phone link - opens phone app on mobile -->
+    <a href="tel:+923001234567">Call me</a>
+
+    <!-- Link with a tooltip on hover -->
+     <!--like abbr tag-->
+    <a href="https://www.google.com" title="This will take you to Google">Hover over me</a>
+
+    <!-- Download link -->
+    <a href="resume.pdf" download>Download my Resume</a>
+
+
+<!-- =========================================================================
+     SECTION 6: IMAGES
+     ========================================================================= -->
+
+    <!-- Basic image -->
+    <!-- src = source (where image is)   alt = alternative text if image doesn't load -->
+    <a href="https://www.youtube.com/watch?v=rklidcZ-aLU&list=PL78RhpUUKSwfYr_bKHq7SWfTCBGad_xxP&t=3s"><img src="images/photo.png" alt="Talha's image" title ='Talha Habib' height="150px" target="_blank"></a>
+    <!-- I removed the autoplay attribut for the video -->
+    <video src="assets/video1.mp4" height="240px"   controls loop alt="video1" href="" ></video>
+    <!-- Image with width and height -->
+    <img src="photo.jpg" alt="My photo" width="300" height="200">
+
+    <!-- Image from internet (URL) -->
+    <img src="https://yt3.ggpht.com/BQVUuRtVtau71dBT6Wa1kzM05YPbaLm3dhZe-wMij2t7YO2AKBLTGe8sAqwlX-oDoaMvD-M1qQ=s88-c-k-c0x00ffffff-no-rj" alt="Placeholder image">
+
+    <!-- Image as a clickable link -->
+    <a href="https://www.google.com">
+        <img src="logo.png" alt="Google Logo">
+    </a>
+
+    <!-- Figure with caption -->
+    <figure>
+        <img src="images/photo.png" alt="My photo" width="300">
+        <figcaption>This is a caption below the image</figcaption>
+    </figure>
+
+
+<!-- =========================================================================
+     SECTION 7: LISTS
+     ========================================================================= -->
+
+    <!-- Unordered List (bullet points) -->
+    <ul>
+        <li>Python</li>
+        <li>Django</li>
+        <li>HTML</li>
+        <li>C++</li>
+    </ul>
+
+    <!-- Ordered List (numbered) -->
+    <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+    </ol>
+
+    <!-- Ordered list starting from a different number -->
+    <ol start="5">
+        <li>This starts at 5</li>
+        <li>This is 6</li>
+    </ol>
+
+    <!-- Ordered list with different types -->
+    <ol type="A">        <!-- A B C D -->
+        <li>Item A</li>
+        <li>Item B</li>
+    </ol>
+
+    <ol type="I">        <!-- I II III IV -->
+        <li>Item I</li>
+        <li>Item II</li>
+    </ol>
+ <nav>
+    <a href="#Home"><b>Go to home</b></a>
+</nav>
+    <!-- Nested List (list inside a list) -->
+    <ul>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Description List (term + definition) -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language - structure of web pages</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets - styling of web pages</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Programming language for web interactivity</dd>
+    </dl>
+
+
+<!-- =========================================================================
+     SECTION 8: TABLES
+     ========================================================================= -->
+
+    <!-- Basic table structure:
+         <table>   = the whole table
+         <thead>   = header section
+         <tbody>   = body section
+         <tfoot>   = footer section
+         <tr>      = table row
+         <th>      = table header cell (bold by default)
+         <td>      = table data cell
+    -->
+ <p id="chalohome" ><b>go to home</b></p>
+    <table border="3">
+
+        <!-- Table caption (title above the table) -->
+        <caption>Student Results</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Talha</td>
+                <td>20</td>
+                <td>85</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Ali</td>
+                <td>22</td>
+                <td>92</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Sara</td>
+                <td>21</td>
+                <td>78</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>3 students</td>
+                <td colspan="2">Average: 85</td>
+                <!-- <td></td> -->
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <!-- colspan = merge cells horizontally -->
+    <!-- rowspan = merge cells vertically -->
+    <table border="1">
+        <tr>
+            <th colspan="3">Personal Information</th>  <!-- spans 3 columns -->
+        </tr>
+        <tr>
+            <td rowspan="2">Talha</td>   <!-- spans 2 rows -->
+            <td>Age: 20</td>
+            <td>City: Karachi</td>
+        </tr>
+        <tr>
+            <td>Language: Python</td>
+            <td>Grade: B</td>
+        </tr>
+    </table>
+
+
+<!-- =========================================================================
+     SECTION 9: FORMS
+     Forms are used to collect input from users
+     ========================================================================= -->
+
+    <!-- action = where to send the data   method = how to send (GET or POST) -->
+    <form action="/submit" method="POST">
+
+        <!-- Text input -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+
+<nav>
+    <a href="#chalohome">click to take you to home</a>
+</nav>
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br><br>
+
+        <!-- Number input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" value="20">
+        <br><br>
+
+        <!-- Phone input -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="03001234567">
+        <br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Time input -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <!-- URL input -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
+        <br><br>
+
+        <!-- Range slider input -->
+        <label for="marks">Marks (0-100):</label>
+        <input type="range" id="marks" name="marks" min="0" max="100" value="76">
+        <br><br>
+
+        <!-- Color picker -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" value="#7F77DD">
+        <br><br>
+
+        <!-- Search input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search...">
+        <br><br>
+
+        <!-- Checkbox (multiple selections allowed) -->
+        <p>Skills:</p>
+        <input type="checkbox" id="python" name="skills" value="python">
+        <label for="python">Python</label> <br>
+
+        <input type="checkbox" id="html" name="skills" value="html" checked>
+        <label for="html">HTML</label> <br>
+
+        <input type="checkbox" id="cpp" name="skills" value="cpp">
+        <label for="cpp">C++</label>
+        <br><br>
+
+        <!-- Radio buttons (only ONE selection allowed) -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label> <br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Dropdown select -->
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="">-- Select City --</option>
+            <option value="karachi" selected>Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+        </select>
+        <br><br>
+
+        <!-- Multi-select dropdown (hold Ctrl to select multiple) -->
+        <label for="languages">Languages (select multiple):</label>
+        <select id="languages" name="languages" multiple size="4">
+            <option value="python">Python</option>
+            <option value="cpp">C++</option>
+            <option value="html">HTML</option>
+            <option value="js">JavaScript</option>
+        </select>
+        <br><br>
+
+        <!-- Textarea (multi-line text input) -->
+        <label for="bio">Bio:</label> <br>
+        <textarea id="bio" name="bio" rows="4" cols="40"
+                  placeholder="Tell us about yourself..."></textarea>
+        <br><br>
+
+        <!-- Datalist (text input with suggestions) -->
+        <label for="framework">Framework:</label>
+        <input type="text" id="framework" name="framework" list="frameworks">
+        <datalist id="frameworks">
+            <option value="Django">
+            <option value="Flask">
+            <option value="FastAPI">
+            <option value="React">
+        </datalist>
+        <br><br>
+
+        <!-- Hidden input (not visible but sends data) -->
+        <input type="hidden" name="user_id" value="12345">
+
+        <!-- File upload -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc">
+        <br><br>
+
+        <!-- Fieldset groups related inputs together -->
+        <fieldset>
+            <legend>Address Information</legend>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street"> <br><br>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip">
+        </fieldset>
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit Form">
+
+        <!-- Reset button (clears the form) -->
+        <input type="reset" value="Reset Form">
+
+        <!-- Button tag (more flexible than input) -->
+        <button type="submit">Submit</button>
+        <button type="button">Just a Button</button>
+
+    </form>
+
+
+<!-- =========================================================================
+     SECTION 10: SEMANTIC HTML ELEMENTS
+     Semantic = meaningful tags that describe what the content IS
+     Important for SEO and accessibility
+     ========================================================================= -->
+
+    <!-- <header> = top section of page or a section -->
+    <header>
+        <h1>Talha's Website</h1>
+        <nav>
+            <!-- <nav> = navigation links -->
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- <main> = the main content of the page (only one per page) -->
+    <main>
+
+        <!-- <section> = a thematic section of the page -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Hello! I am Talha, a Python Developer from Chitral.</p>
+        </section>
+
+        <!-- <article> = independent self-contained content (blog post, news) -->
+        <article>
+            <h2>My First Blog Post</h2>
+            <p>Posted on: <time datetime="2026-05-27">May 27, 2026</time></p>
+            <p>Today I learned about HTML semantic elements...</p>
+        </article>
+
+        <!-- <aside> = side content related to main content (sidebar) -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Python Docs</a></li>
+                <li><a href="#">Django Docs</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- <footer> = bottom section of page -->
+    <footer id="contact">
+        <p>© 2026 Talha. All rights reserved.</p>
+        <address>
+            <!-- <address> = contact information -->
+            Email: <a href="mailto:talha@gmail.com">talha@gmail.com</a> <br>
+            chitral, Pakistan
+        </address>
+    </footer>
+
+
+<!-- =========================================================================
+     SECTION 11: DIV AND SPAN
+     Non-semantic containers used for grouping and styling
+     ========================================================================= -->
+
+    <!-- <div> = block level container (takes full width, starts on new line) -->
+    <div id="wrapper">
+        <div class="card">
+            <h3>Card Title</h3>
+            <p>Card content goes here.</p>
+        </div>
+        <div class="card">
+            <h3>Another Card</h3>
+            <p>More content here.</p>
+        </div>
+    </div>
+
+    <!-- <span> = inline container (stays in same line) -->
+    <p>My name is <span style="color:rgb(4, 110, 114)">Talha</span> and I love <span style="color:blue">Python</span>.</p>
+
+
+<!-- =========================================================================
+     SECTION 12: MULTIMEDIA
+     ========================================================================= -->
+
+    <!-- Audio player -->
+    <audio controls>
+        <!-- controls = shows play/pause/volume buttons -->
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support audio.   <!-- fallback text -->
+    </audio>
+
+    <!-- Audio with autoplay and loop -->
+    <audio controls autoplay loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Video player -->
+    <video width="400" height="300" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support video.
+    </video>
+
+    <!-- Video with poster image (thumbnail before play) -->
+    <video width="400" controls poster="thumbnail.jpg">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Embed YouTube video using iframe -->
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="YouTube video"
+            allowfullscreen>
+    </iframe>
+
+    <!-- Embed Google Maps -->
+    <iframe
+        src="https://maps.google.com/maps?q=Karachi&output=embed"
+        width="400" height="300">
+    </iframe>
+
+
+<!-- =========================================================================
+     SECTION 13: HTML ENTITIES (SPECIAL CHARACTERS)
+     Some characters have special meaning in HTML so we use codes for them
+     ========================================================================= -->
+
+    <p>
+        &lt;   = less than sign      &lt; <br>
+        &gt;   = greater than sign   &gt; <br>
+        &amp;  = ampersand           &amp; <br>
+        &quot; = double quote        &quot; <br>
+        &apos; = single quote        &apos; <br>
+        &nbsp; = non-breaking space (keeps words together) <br>
+        &copy; = copyright           &copy; <br>
+        &reg;  = registered          &reg; <br>
+        &trade;= trademark           &trade; <br>
+        &euro; = euro sign           &euro; <br>
+        &pound;= pound sign          &pound; <br>
+        &hearts;= heart symbol       &hearts; <br>
+        &star; = star symbol         &star;
+    </p>
+
+
+<!-- =========================================================================
+     SECTION 14: META TAGS (ADVANCED - For SEO & Social Media)
+     These go inside <head> but explained here for clarity
+     ========================================================================= -->
+
+    <!--
+    Open Graph tags (for Facebook, WhatsApp previews when you share a link):
+
+    <meta property="og:title"       content="Talha's Portfolio">
+    <meta property="og:description" content="Python Developer from Karachi">
+    <meta property="og:image"       content="https://mysite.com/preview.jpg">
+    <meta property="og:url"         content="https://mysite.com">
+    <meta property="og:type"        content="website">
+
+    Twitter Card tags:
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Talha's Portfolio">
+    <meta name="twitter:description" content="Python Developer from Karachi">
+    <meta name="twitter:image"       content="https://mysite.com/preview.jpg">
+
+    Refresh page every 30 seconds:
+    <meta http-equiv="refresh" content="30">
+
+    Redirect to another page after 5 seconds:
+    <meta http-equiv="refresh" content="5; url=https://newpage.com">
+    -->
+
+
+<!-- =========================================================================
+     SECTION 15: ADVANCED ELEMENTS
+     ========================================================================= -->
+
+    <!-- Details / Summary (accordion / expandable section) -->
+    <details>
+        <summary>Click to expand</summary>
+        <p>This content is hidden until you click the summary.</p>
+        <p>Very useful for FAQs!</p>
+    </details>
+
+    <!-- Progress bar -->
+    <label>Python skill:</label>
+    <progress value="34" max="100">85%</progress> <br>
+
+    <label>HTML skill:</label>
+    <progress value="70" max="100">70%</progress>
+
+    <!-- Meter (gauge - like battery level) -->
+    <label>Storage used:</label>
+    <meter value="60" min="0" max="100" low="30" high="80" optimum="50">60%</meter>
+
+    <!-- Canvas (for drawing with JavaScript) -->
+    <canvas id="myCanvas" width="400" height="200"
+            style="border:1px solid black">
+        Your browser does not support canvas.
+    </canvas>
+
+    <!-- Dialog box (popup - controlled with JavaScript) -->
+    <dialog id="myDialog">
+        <p>This is a dialog popup!</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+    <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+    <!-- Template (hidden reusable HTML - used with JavaScript) -->
+    <template id="cardTemplate">
+        <div class="card">
+            <h3>Template Card</h3>
+            <p>This is reusable HTML.</p>
+        </div>
+    </template>
+
+    <!-- Picture element (responsive images - different image for different screens) -->
+    <picture>
+        <source media="(min-width: 768px)" srcset="large.jpg">
+        <source media="(min-width: 400px)" srcset="medium.jpg">
+        <img src="Talha.png" alt="Responsive image">
+        <!-- browser picks the best one for the screen size -->
+    </picture>
+
+    <!-- Map with clickable areas on an image -->
+    <img src="world.jpg" alt="World Map" usemap="#worldmap">
+    <map name="worldmap">
+        <!-- rect = rectangle area: left, top, right, bottom -->
+        <area shape="rect" coords="0,0,200,100"
+              href="asia.html" alt="Asia">
+        <!-- circle: center-x, center-y, radius -->
+        <area shape="circle" coords="300,200,50"
+              href="europe.html" alt="Europe">
+    </map>
+
+
+<!-- =========================================================================
+     SECTION 16: IFRAMES (EMBED OTHER PAGES)
+     ========================================================================= -->
+
+    <!-- Embed another webpage inside your page -->
+    <iframe src="https://www.wikipedia.org"
+            width="800" height="400"
+            title="Wikipedia">
+    </iframe>
+
+    <!-- Sandbox attribute limits what iframe can do (security) -->
+    <iframe src="page.html"
+            sandbox="allow-scripts allow-same-origin"
+            width="500" height="300">
+    </iframe>
+
+
+<!-- =========================================================================
+     SECTION 17: HTML COMMENTS & BEST PRACTICES
+     ========================================================================= -->
+
+    <!-- This is how you write comments in HTML - browser ignores these -->
+
+    <!--
+        BEST PRACTICES:
+        1. Always write DOCTYPE at the top
+        2. Always use alt attribute on images
+        3. Always use label with input fields
+        4. Use semantic tags (header, main, footer, section, article)
+        5. Use lowercase for all tags and attributes
+        6. Always close your tags properly
+        7. Use id for unique elements (only one per page)
+        8. Use class for repeated elements (many on same page)
+        9. Keep your HTML clean and indented
+        10. Validate your HTML at: validator.w3.org
+    -->
+
+    <!--
+        DIFFERENCE BETWEEN id AND class:
+        id    = unique, only ONE element can have it     → used with #id in CSS
+        class = reusable, MANY elements can have it      → used with .class in CSS
+
+        <div id="header">        ← only one header
+        <div class="card">       ← many cards
+    -->
+
+    <!--
+        BLOCK vs INLINE ELEMENTS:
+
+        BLOCK elements (start on new line, take full width):
+        <div>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <table>,
+        <header>, <footer>, <section>, <article>, <main>, <nav>, <aside>,
+        <form>, <hr>, <pre>, <blockquote>
+
+        INLINE elements (stay in same line, take only needed width):
+        <span>, <a>, <img>, <strong>, <em>, <b>, <i>, <u>,
+        <input>, <button>, <label>, <code>, <br>, <small>, <sup>, <sub>
+    -->
+
+
+<!-- =========================================================================
+                             END OF GUIDE
+            You've covered HTML from Beginner to Advanced!
+                          Keep building Talha! 🚀
+     ========================================================================= -->
+<p id="bottom"> it is the end</p>
+<nav>
+<a href="#top">go to top</a>
+</nav>
+</body>
+</html>
